@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube Downloader",
+  "version": "0.1",
+  "description": "Youtube downloader on localhost.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/watch?v=*"
+      ],
+      "js": [
+        "myScript.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "youtube.png"
+  }
+}
